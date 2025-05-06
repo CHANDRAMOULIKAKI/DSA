@@ -1,0 +1,169 @@
+     OOPS CONCEPTS
+**constructor:init of objects (init> calling deflt constructor create objects)**
+//when we call constructor which extends another class,it has automaticallly call super class
+class Animal{
+  static {
+         System.out.println("Static block");
+}
+Demo(){
+    System.out.println("Constructor");
+}
+}
+public class q2{
+    public static void main(String[] args){
+     Demo d1=new Demo();
+     Demo d2=new Demo();
+}
+}
+............................................................................................>
+*during staic keyword static block will runs singleton only.*
+*static method no need to craete object,will act as instance or obj and using class name u can  call static methods*
+//when we call a method of class ,only that class method will execute,super method will  not.
+class Animal{
+    static void eat(){
+        System.out.println("Animal is eating");
+    }
+}
+class Dog extends Animal{
+    static void eat(){
+        System.out.println("Dog is eating");
+    }
+}
+class Main{
+    public static void main(String[]  args){
+        Animal.eat();// Animal is  eating
+        Dog.eat();//dog is eating
+    }
+}
+
+//// NON-STATIC///
+class ANimal{
+}
+class dog{
+@override
+}
+Animal animal=new dog();
+animal.eat();  //dog is eating  (because obj creating for dog and non-static.)
+}
+***********************************************************************************************>
+       ///conditional statements///
+check the condition andd it will prints that block(if ,else,else if ,switch)
+public class ConditionalExamples {
+    public static void main(String[] args) {
+        int number = 5;
+
+        if (number > 0) {
+            System.out.println("The number is positive.");
+        }
+
+        if (number % 2 == 0) {
+            System.out.println("The number is even.");
+        } else {
+            System.out.println("The number is odd.");
+        }
+
+        // if-else-if ladder
+        if (number < 0) {
+            System.out.println("The number is negative.");
+        } else if (number == 0) {
+            System.out.println("The number is zero.");
+        } else {
+            System.out.println("The number is positive.");
+        }
+
+        // switch-case
+        int day = 3;
+        switch (day) {
+            case 1:
+                System.out.println("Monday");
+                break;
+            case 2:
+                System.out.println("Tuesday");
+                break;
+            case 3:
+                System.out.println("Wednesday");
+                break;
+            case 4:
+                System.out.println("Thursday");
+                break;
+            default:
+                System.out.println("Another day");
+        }
+    }
+}
+*****************************************************************************>
+              //control stateements//
+1.Entry connrol(for,while)   2.Exit control(while,do-while)
+for (init,cond,incr/dec);
+
+//while loop//
+init;
+while(cond){
+inc/dec;
+}
+
+range> for loop,no range>while loop
+************************************************************************>
+  //printing nth table//
+
+import java.util.Scanner;
+
+public class Table {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter a number ");
+        int num = scanner.nextInt();
+
+       
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(num + " x " + i +  " = "+ (num * i));
+        }
+
+
+    }
+}
+   //factorial //
+public class Factorial {
+    public static void main(String[] args) {
+        int num = 5;
+        int factorial = 1;
+
+        for (int i = 1; i <= num; i++) {
+            factorial *= i;
+        }
+
+        System.out.println("Factorial of " + num + " is: " + factorial);
+    }
+}
+//reverse a number//
+{
+Scanner scanner=new Scanner(System.in);
+System.out.println("enter a number");
+int number=scanner.nextInt();
+reversed=0;
+while(number!=0){
+  int digit=number%10;
+  reversed=reversed*10+digit;
+  number=number/10;
+}
+System.out.println("reversed number:"+reversed number);
+}
+//  
+  // printing patterns//
+
+* * * * *
+   *   
+    *
+      *
+* * * * *
+if(row==1||row==n||row+col==0){
+  print("*",end='')
+}
+else:
+  print(end=" ")
+
+*********************************************>
+
+
+
