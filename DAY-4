@@ -1,0 +1,13 @@
+//switch case//
+class Main{
+public static void main(String[] args){
+   Scannner sc=new Scanner(System.in);
+   int num=sc.nextInt();
+   switch(expression){
+     case:
+         statement;
+         break;
+     default:
+           starement;
+}
+}
