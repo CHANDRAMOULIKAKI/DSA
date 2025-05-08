@@ -65,4 +65,82 @@ o/p:
 1 2 3 4 5 6 7
 1 2 3 4 5 6 7 8 9
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+   hallow square in ternary operator
+class Main{
+    public static void main(String args[]){
+        int n=5;
+        for(int i=1;i<=n;i++)
+        
+        {
+            for(int j=1;j<=n;j++){
+                System.out.print((i==1||i==5||j==1||j==5)?"*":" ");
+            }
+            System.out.println();
+        }
+    }
+} 
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+   for-each loop
+1.when ever we not have len,index val we use for each loop.
+2.mostly we used for each loop in collections(list,set,map)
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+traingle pattern
+class Main {
+    public static void main(String[] args) {
+       for(int i=1;i<=5;i++){
+           for(int j=5;j>i;j--){
+               System.out.print(" ");
+           }
+           for(int j=1;j<=(2*i-1);j++){
+               System.out.print("*");
+           }
+           System.out.println();
+       }
+    }
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<(TCS -DIGITAL QUESTION)
+In the kingdom of Terebinthia, Leslie Burke is so much interested in gardening and hence she plants more trees in her garden. She plants trees in a rectangular fashion with the order of rows and columns and numbers the trees in a row-wise order. She planted the mango trees only in the 1st row, 1st column, and last column. So, given the tree number, your task is to find out whether the given tree is a mango tree or not. Now, write a program to check whether the given number denotes a mango tree or not.
+
+Input Format
+
+Input consists of 3 integers. The first input denotes the number of rows. The second input denotes the number of columns. The third input denotes the tree number.
+
+Constraints
+
+NA
+
+Output Format
+
+If the given number is a mango tree, print "Yes". Otherwise, print "No"
+
+Sample Input 0
+
+5
+5
+11
+Sample Output 0
+
+Yes
+Sample Input 1
+
+2
+5
+8
+Sample Output 1
+
+No
+
+
+Scanner sc=new Scannner(System.in);
+int n=sc.nextInt();
+int val=sc.nextInt();
+if(val<=n || val%n==1 ||val%n==0){
+  s.o.p("True);
+}
+else{
+ s.o.p("No");
+}
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
 
