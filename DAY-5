@@ -1,0 +1,7 @@
+         //ARRAYS//
+int a=5;
+int b=7;
+int c=3;
+they are same  datatype,but we are chooosing diff variables it has take more or high memory.so Array cam in to  pictutre.
+Collection of similar datype in contigious mem allocation(int has 4 bytes,stoarage address)
+
