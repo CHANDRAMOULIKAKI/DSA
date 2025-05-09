@@ -57,6 +57,70 @@ class Main {
        System.out.println("even count is" +  evenCount + "odd count is"+oddCount);
     }
 }
-?>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+?>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+//  max number in array//
+class Main {
+    public static void main(String[] args) {
+    int arr[]={1,5,6,3,8,9};
+    int max=arr[0];
+    for(int i=0;i<arr.length;i++){
+        if (arr[i]>max){
+            max=arr[i];
+        }
+        
+    }
+    System.out.println(max);
+    
+    }
+}
+1.for loop inside for loop then complexity is o(n^2)
+2. for loops then time complexity is o(n+n)
+
+*****************************************************************************>
+public class MaxTwoInArray {
+    public static void main(String[] args) {
+        int[] numbers = {10, 25, 90, 64, 90, 45, 12};
+
+        int firstMax = Integer.MIN_VALUE;
+        int secondMax = Integer.MIN_VALUE;
+
+        for (int num : numbers) {
+            if (num > firstMax) {
+                secondMax = firstMax;
+                firstMax = num;
+            } else if (num > secondMax && num != firstMax) {
+                secondMax = num;
+            }
+        }
+
+        System.out.println("First Highest: " + firstMax);
+        System.out.println("Second Highest: " + secondMax);
+    }
+}
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+size will be fixed,not modified.
+int[] arr stroed in stack mem,we call as referencce.
+new keyword helps to create object space
+if array type is integer by dflt all are zeores. array type is str all dflt val==null
+1.primitive 2.non-primitive
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+  //getiing array index//
+class Main{
+    static int getIndex(int[] arr,int target){
+        for(int i=0;i<arr.length;i++){
+            if(arr[i]==target){
+                return i;
+            }
+        }
+        return -1;
+    }
+    public static void main(String[] args){
+        int[] arr={1,2,3,4,5};
+        int target=5;
+        System.out.println(getIndex(arr,target));
+    }
+}
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
 
 
