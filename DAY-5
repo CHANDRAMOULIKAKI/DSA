@@ -6,4 +6,57 @@ they are same  datatype,but we are chooosing diff variables it has take more or 
 Collection of similar datype in contigious mem allocation(int has 4 bytes,stoarage address)
 syntax:
     datatype[] arrayname;
+1.declaration at firsrt
+2.init happens at  second line
+array is based on index value(0.....n)
+***************************************************************************************
+class Main {
+    public static void main(String[] args) {
+        int[] arr={1,2,5,6};
+        for(int i=0;i<arr.length;i++){
+           System.out.println(arr[i]); 
+           
+        }
+       
+    }
+}
+
+> to get the  size of array,we use arr.length
+> to get the len of str,we use str.length()
+we can use for loop,using for each loop,arraytostr()
+for(int i:arr){
+  System.out.println(i);
+}
+  System.out.println(arrays.toString(arr));
+toString() is inbuilt method to print arr values.
+tostr() contains 
+>>java strictly follows camel case<<
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+//count even and odd count using arrays(case)//
+
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        int[] arr={1,2,5,6};
+        int oddCount=0;
+        int evenCount=0;
+        for(int i=0;i<arr.length;i++){
+            if (arr[i]%2==0){
+             evenCount++;
+            
+        }
+        
+            
+        
+        else{
+           oddCount++;
+        }
+           
+        }
+        
+       System.out.println("even count is" +  evenCount + "odd count is"+oddCount);
+    }
+}
+?>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
 
