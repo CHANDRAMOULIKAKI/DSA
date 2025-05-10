@@ -1,0 +1,117 @@
+// 2-D ARRAYS//
+
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int[][] arr=new int[3][2];
+        System.out.println("enter values:")
+        for(int i=0;i<arr.length;i++){
+            for(int j=0;j<arr[i].length;j++){
+                arr[i][j]=sc.nextInt();
+            }
+        }
+        for(int i=0;i<arr.length;i++){
+            for(int j=0;j<arr[i].length;j++){
+                System.out.print(arr[i][j]);
+            }
+            System.out.println();
+        }
+      for(int i=0;i<arr.length;i++){
+        System.out.println(Arrays.toString(arr[i]));
+    }
+}
+}
+here we use arr[i].length inside for loop bcz we doing seperate rows for sep length.
+
+//zagged array//
+  col are dynamic
+  import java.util.*;
+class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int arr[][]={
+            {1,2,3,},
+            {4,5},
+            {6,7,8,9}
+             };
+      for(int i=0;i<arr.length;i++){
+                for(int j=0;j<arr[i].length;j++){
+                    
+                }
+            }
+    }
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+  //misssing number in sorted array//
+  
+  class Main{
+    public static void main(String[] args){
+        int[] arr={1,2,3,5,6,7,8,9};
+        for(int i=0;i<arr.length-1;i++){
+            if(arr[i]+1!=arr[i+1]){
+                System.out.println(arr[i]+1);
+                
+            }
+        }
+    }
+}
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+     //max consecutive ones//
+  class Main{
+    public static void main(String[] args){
+        int[] arr={1,0,1,0,1,1,1,0,1,1};
+        int max=0;
+        int count=0;
+        for(int i=0;i<arr.length;i++){
+            if(arr[i]==1){
+                count++;
+            }
+            else{
+                count=0;
+            }
+            max=Math.max(count,max);
+        }
+        System.out.println(max);
+    }
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+  //raotaing array in 90 degree//
+  import java.util.*;
+class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int[][] arr=new int[3][3];
+        System.out.println("enter the values:");
+        for(int i=0;i<arr.length;i++){
+            for(int j=0;j<arr.length;j++){
+                arr[i][j]=sc.nextInt();
+            }
+        }
+        for(int i=0;i<arr.length;i++){
+            for(int j=0;j<arr.length;j++){
+                System.out.print(arr[j][i]);
+            }
+            System.out.println();
+        }
+    }
+}
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    leaders in array
+  import java.util.*;
+class  {
+    public class LeaderInArray{
+        public static List<Integer> findleaders(int[] arr){
+        List<Integer> leaders=new ArrayList<>();
+        int minExtreme =Integer.MIN_VALUE;
+        for(int i=arr.length-1;i>=0;i--){
+            if(arr[i]>minExtreme){
+                leaders.add(arr[i]);
+                minExtreme=arr[i];
+            }
+        }
+        Collections.reverse(leaders);
+        return leaders;
+    }
+}
+}
