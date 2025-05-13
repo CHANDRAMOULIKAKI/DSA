@@ -1,0 +1,28 @@
+greddy algorith -assign cookies
+
+class Solution:
+    def findContentChildren(self, g: List[int], c: List[int]) -> int:
+        g.sort()
+        c.sort()
+
+        i=0
+        j=0
+        while i<len(g) and j<len(c):
+            if c[j]>=g[i]:
+                i=i+1
+                
+            j+=1
+
+        return i  
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+//recursions//
+fun it call itself untill it meets base condition
+fun calling itself and itself
+in java,we dont have pointers so wee cant use reference,we use pass by value
+if didn't mention base case properly we get exception called stackoverflow
+recursions are used to break the code,stored the values in stack when we reach based condition it will pop
+5!=5*4!
+4!=4*3!
+3!=3*2!
+2!=2!*1!
+1!=1!*0!  into a stack.
