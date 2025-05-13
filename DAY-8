@@ -26,3 +26,62 @@ recursions are used to break the code,stored the values in stack when we reach b
 3!=3*2!
 2!=2!*1!
 1!=1!*0!  into a stack.
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+   //Lemonade change//
+import java.util.ArrayList;
+import java.util.List;
+
+public class Main {
+    public static boolean lemonadeChange(List<Integer> bills) {
+        int five = 0; 
+        int ten = 0;   
+        
+        for(int i = 0; i < bills.size(); i++){
+            if(bills[i] == 5){
+                five++;  
+            }
+            else if(bills[i] == 10){
+                if(five > 0){
+                    five--; 
+                    ten++;   
+                }
+                else{
+                   return false;   
+                } 
+            }
+            else {
+                if(five > 0 && ten > 0){
+                    five--; 
+                    ten--;   
+                }
+                else if (five >= 3){
+                    five -= 3;  
+                }
+                else{
+                  return false;  
+                }   
+            }
+        }
+        return true;  
+    }
+
+}
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+//palindrome number//
+1.convert integer into string
+2.use two ptrs,i=0,j=last element
+
+
+class Solution:
+    def isPalindrome(self, x: int) -> bool:
+        x_str=str(x)
+        i=0
+        j=len(x_str)-1
+        while i<j:
+            if x_str[i]!=x_str[j]:
+                return False
+            i+=1
+            j-=1    
+        return True 
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
