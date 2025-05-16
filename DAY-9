@@ -17,3 +17,20 @@ set and maps are used to get the results in bigO(N) ,O(1) complexity,we dont hav
 List<Integer> lt=new ArrayList(class name)<>();
 set<Integer> st=new Hashser<>();
 Map<Integer,integer>mp=new Hashmap<>();
+  //kadanes algo//
+from the given array we have to find maxsum of subarrays[1,2,3] :[1][2][3][1,2][2,3][1,2,3]
+to find maximum sum of subarrays for optimal solution we use kadanes algo
+initalize 2 variables sum=0 and max=0
+take a loop from 0 to n-1 get the indvidual values and add them and update max,from the sum
+our target is to get maxsum,if we carrry negative valuess the overal sum will reduce to zero(0).
+class Solution:
+    def maxSubArray(self, nums: List[int]) -> int:
+        max_sum=nums[0]
+        sum=0
+        for i in nums:
+            if sum<0:
+                sum=0
+            sum+=i    
+
+            max_sum=max(max_sum,sum)
+        return max_sum   
