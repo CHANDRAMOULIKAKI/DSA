@@ -1,0 +1,19 @@
+    //COLLECTION FRAMEWORK//
+LIST                   SET                 MAP
+Arraylist              Hashset             hashmap
+linked list            linkedhashset       linkedhashmap
+vector                 treeset             treemap 
+
+LIST:
+list contains order elemnts and which can duplicates 
+SET:
+not allow dups,unorderd
+hashset:
+ it is class it is used to store set elemngets,unordered,if we use treeset it is orderd.
+MAPS:
+maps contains keyvalue pairs and to store keyvalue pairs will use hashmap.
+set and maps are used to get the results in bigO(N) ,O(1) complexity,we dont have index.we cant use for loop
+
+List<Integer> lt=new ArrayList(class name)<>();
+set<Integer> st=new Hashser<>();
+Map<Integer,integer>mp=new Hashmap<>();
