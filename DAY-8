@@ -21,6 +21,14 @@ fun calling itself and itself
 in java,we dont have pointers so wee cant use reference,we use pass by value
 if didn't mention base case properly we get exception called stackoverflow
 recursions are used to break the code,stored the values in stack when we reach based condition it will pop
+terminates when a base case is reached
+problems and algorithms:
+Fibonaaci,factorial
+merge sort,quick sort
+binary search
+inorder,preorder,postorder
+graph traversal(bfs,dfs),Dynamic programming,divide and conquer ,backtracking algo.
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 5!=5*4!
 4!=4*3!
 3!=3*2!
