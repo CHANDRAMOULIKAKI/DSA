@@ -21,3 +21,23 @@ type of D.S: Linear and non linear
 Linear :Linked list,stack and queue
 Non-linear : Tress,graph,heaps
 social media and browser:Linked list in browwser and social media mutual frnds are used by no linear is graphs
+
+//LINKED LIST//
+data,address of next node
+Node(int data){
+  this.data=data1;
+  this.next=Null;
+}
+there no datatype is stored to data and address,so we have to create datatpe as well as address.
+class Node{
+   int data;
+   node next;
+}
+TWO possible objects:
+1.single node and last node .obj will acceept and address will null
+2.create constructor which can accept data as well as address.
+Node(int data1,Node next1){
+   this.data=dat1;
+   this.next=next;
+}
+
