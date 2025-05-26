@@ -1,0 +1,23 @@
+   //DATA STRUCTURES AND ALGO//
+
+customization:keep the code efficient,not messy,clean code.so it will be optimised and time taken is very less.
+using data structures some times we fail to solve problem in optimsed way,in that time algorithms came in to picture this is called DSA
+Linked list,stack,queue,heaps,tree,graph  and algos:2ptrs,kadanes algo,sliding window,greedy,sort,search,backtracking,dp,bfs,dfs
+
+
+//TIME AND SPACE COMPLEXITY//
+Ignore small values
+ignore constants
+focus on worst case
+for every problem we focus on worst case and the steps for problem
+1.Brute force appraoch
+2.better(AVG)
+3.best case(optimal)
+
+//space complexity//
+the extra space using to solve a problem
+examples: browser,gmaps.
+type of D.S: Linear and non linear
+Linear :Linked list,stack and queue
+Non-linear : Tress,graph,heaps
+social media and browser:Linked list in browwser and social media mutual frnds are used by no linear is graphs
