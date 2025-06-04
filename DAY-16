@@ -1,0 +1,26 @@
+//TREES//
+trees are acyclic graphs or subsset of graphs.
+Non-linear datastrucure and Node can be added at any pt.
+complex datastrucure so it is non linear and it is customization we requrired left and right node.
+class Node{
+  int data;
+  node left;
+  node right;
+}
+why trees are required?
+we want get o/p in (logn) complexity starting node we called as ROOT Node and rest node are childnodes.base nodes are called as leaf node
+under binary tree as:BST,SEGMENT TREE,Tries
+//TREE TRAVERSAL//
+1.BFS(level order traversal)
+2.DFS(pre,in,post)
+for every node it is a  root node
+height and diameter of tree 
+height of tree is:Longest path of tree(nodes)
+depth of tree is: max(LEFT+RIGHT+1)   
+exaples of trees: BALANCED TREE,B.S.T,BINARY TREE,RED TREE,AVL TRE,ETC
+  //Balanced tree//
+Balnced tree diffrence b/w height of left  tree and right tree is(-1,0,1)
+3 types :
+1.complete  :>  every level  should be filled with nodes and start  with lefft to  right
+2.full   :>  every level filled with nodes and every nodes contain 0 or 2.
+3.perfect  :>every level should be filled with node and that nodes have 2 children
