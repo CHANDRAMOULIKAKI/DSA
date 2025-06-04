@@ -1,4 +1,5 @@
 //TREES//
+O(log n) we get this complexity we have only to  implment binary search and trees.
 trees are acyclic graphs or subsset of graphs.
 Non-linear datastrucure and Node can be added at any pt.
 complex datastrucure so it is non linear and it is customization we requrired left and right node.
@@ -24,3 +25,25 @@ Balnced tree diffrence b/w height of left  tree and right tree is(-1,0,1)
 1.complete  :>  every level  should be filled with nodes and start  with lefft to  right
 2.full   :>  every level filled with nodes and every nodes contain 0 or 2.
 3.perfect  :>every level should be filled with node and that nodes have 2 children
+
+//BINARY SEARCH TREE//
+left<root<right
+Stacks are used for DFS,Queues are used for  BFS
+
+when we are elimanting some elemnts  in array or going traversal 
+//drawbacks//
+In BST,the tree migths non-linear(skew-tree)
+then the complete version of trees aree wasted.
+//self balancing trees(AVL trees)//
+when tree got unbalanced using AVL methods trees get balanced(correct it).they are 4 cases
+1.left-left
+2.right-right
+3.left-right
+4.right-left
+a/c to case we have to do left rotate and right rotate
+//SEGMENT TREE/
+for the range queries we are using prefix sum for optimal sol,and it take o(n)
+when ever array values are using prefix sum,we for that updated array we have to craete on more prefix array
+now its taking o(n+n) as time and space.
+what if array values updated n times bcz of this reason we have to use segment trees
+
